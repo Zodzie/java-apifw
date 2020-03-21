@@ -1,4 +1,4 @@
-package zodzie;
+package src.zodzie;
 
 import java.io.PrintWriter;
 import java.io.InputStream;
@@ -48,15 +48,18 @@ public class Runner extends Thread {
 				postData = new String(charArray);
 
 				query = postData.toString();
+				
+				
 				// if you want to read the post data
 				// System.out.println("Post DATA: " + postData.toString());
 
 				// query is most likely a json block. you can turn query into a json object -
 				// parse and respond accordingly
 				// example:
-				// startNew.classHere();
+				// startNew.classHere(query);
 				// Confluence.api.Search();
 
+				
 				// cleanup
 				out.close();
 				in.close();

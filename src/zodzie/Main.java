@@ -1,4 +1,4 @@
-package zodzie;
+package src.zodzie;
 
 import java.net.ServerSocket;
 
