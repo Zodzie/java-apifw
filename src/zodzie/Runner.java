@@ -51,11 +51,7 @@ public class Runner extends Thread {
 				// if you want to read the post data
 				// System.out.println("Post DATA: " + postData.toString());
 
-				// query is most likely a json block. you can turn query into a json object -
-				// parse and respond accordingly
-				// example:
-				// startNew.classHere();
-				// Confluence.api.Search();
+				// query is most likely a json block. you can turn query into a json object to parse and act on.
 
 				// cleanup
 				out.close();
