@@ -4,15 +4,15 @@ import java.net.ServerSocket;
 
 public class Main {
 	public static void main(String[] args) {
-		final int PORT = 7999;
+		final int port = 7999;
+		final int connectionLimit = 10;
 		try {
-			@SuppressWarnings("resource")
-			ServerSocket port = new ServerSocket(PORT);
-			System.out.println("Server active "+PORT+"");
+			ServerSocket connection = new ServerSocket(port, connectionLimit);
+			System.out.println("Server active "+port+"");
 			do {
-				new Runner(port.accept());
+				new Runner(connection.accept());
 			} while (true);
-		} catch (Exception port) {
+		} catch (Exception connection) {
 			return;
 		}
 	}
